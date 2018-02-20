@@ -4,10 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Funcionario marcelo = new Funcionario();
         Gerente tomaz = new Gerente();
 
-        marcelo.setNome("Marcelo");
         tomaz.setNome("Tomaz");
 
         tomaz.setSenha(123);
@@ -24,7 +22,7 @@ public class Main {
         funcionario1.setSalario(5000.0);
         controle.registra(funcionario1);
 
-        Funcionario funcionario2 = new Funcionario();
+        Funcionario funcionario2 = new Gerente();
         funcionario2.setSalario(1000.0);
         controle.registra(funcionario2);
 
