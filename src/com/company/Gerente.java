@@ -1,8 +1,28 @@
 package com.company;
 
 public class Gerente extends Funcionario {
-    int senha;
-    int numeroDeFuncionarioGerenciados;
+    private int senha;
+    private int numeroDeFuncionarioGerenciados;
+
+    public int getSenha() {
+        return senha;
+    }
+
+    public int getNumeroDeFuncionarioGerenciados() {
+        return numeroDeFuncionarioGerenciados;
+    }
+
+    public double getBonificacao() {
+        return this.salario * 0.15;
+    }
+
+    public void setSenha(int senha) {
+        this.senha = senha;
+    }
+
+    public void setNumeroDeFuncionarioGerenciados(int numeroDeFuncionarioGerenciados) {
+        this.numeroDeFuncionarioGerenciados = numeroDeFuncionarioGerenciados;
+    }
 
     public boolean autentica(int senha) {
         if (this.senha == senha) {
