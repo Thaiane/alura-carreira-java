@@ -28,4 +28,5 @@ public class Main {
 
         System.out.println("Total " + controle.getTotalDeBonificacoes());
     }
+
 }
